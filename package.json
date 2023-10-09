@@ -1,0 +1,27 @@
+{
+  "name": "snapbizz-admin-backend",
+  "version": "1.0.0",
+  "description": "API services for Admin Panel",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "admin-panel",
+    "admin-portal",
+    "admin-services"
+  ],
+  "author": "Anand N",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongodb": "^5.5.0",
+    "mysql2": "^3.3.1",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.33.0",
+    "winston": "^3.10.0"
+  }
+}
