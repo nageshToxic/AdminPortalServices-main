@@ -10,13 +10,13 @@ const registration = async  (req, res) => {
     
     if(licenceCount == 0){
       console.log(" create new store")
+      //validate licience key
+      res.status(200).send({
+        "message": "store created successfully",
+        "status":"SUCCESS"
+    })
     }
 
-    //validate licience key
-    res.status(200).send({
-      "message": "store created successfully",
-      "status":"SUCCESS"
-  })
   }else{
      res.status(500).send({
       "message": "phone number already exists",

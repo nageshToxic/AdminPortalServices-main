@@ -1,7 +1,7 @@
 const Sequelize =require('sequelize')
 
 module.exports = (sequelize, Sequelize) => {
-	const licenceKey = sequelize.define('licence_keys', {
+	const licenceKey = sequelize.define('license_keys', {
         id: {
 			type: Sequelize.INTEGER,
 			autoIncrement: true,
@@ -45,7 +45,7 @@ module.exports = (sequelize, Sequelize) => {
         },
 	},
 	{
-			tableName: 'licence_keys',
+			tableName: 'license_keys',
 			timestamps: true,
 			created_at: true,
 			updated_at: true,

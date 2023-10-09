@@ -1,7 +1,7 @@
 
 const sequelize = require("../../config/dbConfig/mysqlDbConnection.js");
 const Store = sequelize.db.stores;
-const licenceKey = sequelize.db.license_keys;
+const licenseKey = sequelize.db.license_keys;
 
 
 const getStoreByPhone = async (phone) => {
@@ -12,7 +12,7 @@ const getStoreByPhone = async (phone) => {
   })
 }
 const isLicenseKeyUnAllocated = async (license_key) => {
-  return await licenceKey.count({
+  return await licenseKey.count({
    where:{
     l_key:license_key
    } 
